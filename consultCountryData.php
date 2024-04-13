@@ -28,7 +28,6 @@ $response = curl_exec($curl);
 
 $conn = new mysqli($HOST, $USER, $PASS, $DB_NAME);
 
-
 if ($conn->connect_error) {
   die("Conexão falhou: " . $conn->connect_error);
 };
