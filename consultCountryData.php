@@ -38,9 +38,7 @@ $sql = "INSERT INTO ultimas_consultas (country, access_time) VALUES ('$country',
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 
-
 echo $response;
-
 
 curl_close($curl);
 $stmt->close();
