@@ -1,6 +1,5 @@
 <?php
 
-
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -16,9 +15,7 @@ curl_setopt_array($curl, array(
 
 $response = curl_exec($curl);
 
-
 echo $response;
-
 
 curl_close($curl);
 ?>
