@@ -1,10 +1,10 @@
 <?php
 
-// Credenciais de conexão
-$host = 'localhost'; // Host do banco de dados
-$user = 'root'; // Nome de usuário do banco de dados
-$pass = ''; // Senha do banco de dados
-$db_name = 'db_kidopi_covid19'; // Nome do banco de dados
+# Credenciais de conexão  
+$HOST="localhost"; // Host do banco de dados  
+$USER="root"; // Nome de usuário do banco de dados  
+$PASS=""; // Senha do banco de dados  
+$DB_NAME="db_kidopi_covid19"; // Nome do banco de dados 
 
 $country = $_REQUEST["country"];
 if ($country == "") {
@@ -26,7 +26,8 @@ curl_setopt_array($curl, array(
 
 $response = curl_exec($curl);
 
-$conn = new mysqli($host, $user, $pass, $db_name);
+$conn = new mysqli($HOST, $USER, $PASS, $DB_NAME);
+
 
 if ($conn->connect_error) {
   die("Conexão falhou: " . $conn->connect_error);

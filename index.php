@@ -52,6 +52,19 @@
                 </div>
             </li> -->
         </ul>
+        <div class="div__calc--taxa">
+            <h2>Calcular diferença entre as taxas de mortalidade dos paises:</h2>
+            <div>
+                <select id="countrySelect-1">
+                    <!-- <option value="Brazil">Brazil</option> -->
+                </select>
+                <select id="countrySelect-2">
+                    <!-- <option value="Australia">Australia</option> -->
+                </select>
+                <button type="button" id="btnCalcRate">Calcular</button>
+            </div>
+            <h2>Resultado: <span id="result"></span></h2>
+        </div>
     </main>
     <footer class="footer__container">
         <div>

@@ -208,6 +208,52 @@ table {
     font-size: 18px;
 }
 
+.div__calc--taxa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    margin: 50px 0;
+    padding: 20px 0;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: #f8f9fa;
+    font-family: "Open Sans", sans-serif;
+}
+
+.div__calc--taxa > div > select {
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding: 0px 10px;
+}
+.div__calc--taxa > div > select:hover {
+    border-color: black;
+    transition: 0.3s;
+}
+
+.div__calc--taxa > div > button {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+}
+.div__calc--taxa > div > button:hover {
+    border-color: #0dcaf0;
+    background-color: #0dcaf0;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
 .footer__container {
     background-color: #f8f9fa;
 }
