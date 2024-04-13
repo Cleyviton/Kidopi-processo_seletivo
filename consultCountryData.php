@@ -33,7 +33,6 @@ if ($conn->connect_error) {
   die("Conexão falhou: " . $conn->connect_error);
 };
 
-$dataLocal = date('Y-m-d H:i:s');
 $sql = "INSERT INTO ultimas_consultas (country, access_time) VALUES ('$country', NOW())";
 
 $stmt = $conn->prepare($sql);
